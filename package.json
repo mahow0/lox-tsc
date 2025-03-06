@@ -1,0 +1,12 @@
+{
+  "name": "lox-tsc",
+  "module": "lox.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
