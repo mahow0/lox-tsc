@@ -1,5 +1,7 @@
 import * as fs from 'fs';
 import * as readline from 'readline';
+import { Scanner } from './scanner.ts';
+import { Token } from './token.ts';
 
 
 export class Lox {
@@ -31,7 +33,12 @@ export class Lox {
 
 
     private static run(source : string) : void {
-        console.log(source);
+        const scanner = new Scanner(source);
+        const tokens : Array<Token> = scanner.scanTokens();
+        
+        for (let token of tokens) {
+            console.log(token.toString());
+        }
     }
 
     private static runFile(path : string) : void {

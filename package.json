@@ -1,6 +1,6 @@
 {
   "name": "lox-tsc",
-  "module": "lox.ts",
+  "module": "main.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
